@@ -1,9 +1,11 @@
+/* no extra space around the edges of the webpage */
 body{
     margin: 0px;
     padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* give some space left and right */
 .top{
     width: 98%;
     margin-left: 1%;
@@ -12,15 +14,23 @@ body{
 
 
 .top-menu{
+    height: 50px;
+
+    /* box shadow for 3d looking for top-menu that have language and users function */
     box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24), 0 1px 4px rgba(0, 0, 0, 0.24);
 
-    /* left and right alignment */
+    /* child elements inside positioned and sized in a flexible way*/
     display: flex;
+
+    /* make many element into 1 row*/
     flex-direction: row;
+
+    /* space bettwen the middle for start and end */
     justify-content: space-between;
+
     /* center vertically */
     align-items: center;
-    height: 50px;
+
 }
 
 .top-menu-language{
@@ -50,7 +60,6 @@ body{
 
 .top-logo a img{
     width: 100px;
-    height: auto;
     margin-bottom: -15px;
 }
 
@@ -60,23 +69,28 @@ body{
 
 .top-nav{
     background-color: green;
+}
+
+.top-nav{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-nav a, .top-nav a:link, .top-nav a:visited, .top-nav a:hover, .top-nav a:active {
+    text-decoration: none;
+    color: white;
 }
 
 .top-nav img{
     width: 40px;
 }
 
-.top-nav:first-child{
-    float: left;
-}
-
-.top-nav:last-child{
-    float: right;
-}
-
 .top-nav a{
+    text-align: center;
+
+    width: 100%;
+    padding: 0.4%;
 }
 
