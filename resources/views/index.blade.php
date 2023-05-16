@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    {{-- link to font aswson to use icon --}}
+    <script src="https://kit.fontawesome.com/be05b4c600.js" crossorigin="anonymous"></script>
+
     {{-- move folder css from resources to public than link it with asset function --}}
     <link rel="stylesheet" href="{{ asset('/css/index.css') }}">
     <title>Khmer-Cake-Ecommerce</title>
@@ -40,8 +44,11 @@
 
     {{-- body get from other child files --}}
     <div class="container">
+        <div class="container-head"></div>
+        <div class="container-body">Body is Under Construction</div>
         <div class="container-footer">
             <span class="container-footer-name">
+                <p>Developed by:</p>
                 <p>Pen Techmeng</p>
                 <p>Oeung Chhengkheang</p>
                 <p>Siek Tongheng</p>
@@ -51,13 +58,13 @@
             </span>
             <span class="container-footer-follow">
                 <p>Follow Us</p>
-                <img src="" alt=""> KCTT Snack Group
-                <img src="" alt=""> KCTT Snack Group
+                <a href=""><i class="fa-brands fa-facebook" style="color: #71a3f9;"></i><p>KCTT Snack Group</p></a>
+                <a href=""> <i class="fa-brands fa-telegram" style="color: #71a3f9;"></i><p>KCTT Snack Group</p></a>
             </span>
             <span class="container-footer-download">
                 <p>Download</p>
-                <a href="#"><img src="" alt=""></a>
-                <a href="#"><img src="" alt=""></a>
+                <a href="#"><img src="{{ asset('/img/App_Store.png') }}" alt="photo"></a>
+                <a href="#"><img src="{{ asset('/img/Andriod.png') }}" alt="photo"></a>
             </span>
         </div>
     </div>
