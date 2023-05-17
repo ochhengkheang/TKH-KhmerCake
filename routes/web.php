@@ -1,6 +1,8 @@
 <?php
 
+use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Route;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -18,5 +20,17 @@ Route::get('/', function () {
 });
 
 route::get('/admin', function() {
+    return view('admin.index');
+});
+
+route::get('/products', function(){
     return view('admin.products.index');
 });
+
+route::get('/customers',function(){
+    return view('admin.customers.index');
+});
+
+// use {location} at the top before calling Controller
+route::resource('/admin/products',ProductController::class);
+
