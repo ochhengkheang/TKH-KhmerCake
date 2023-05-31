@@ -9,7 +9,7 @@
     <script src="https://kit.fontawesome.com/be05b4c600.js" crossorigin="anonymous"></script>
 
     {{-- move folder css from resources to public than link it with asset function --}}
-    <link rel="stylesheet" href="{{ asset('/css/index.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/master.css') }}">
 
     {{-- @yield('name') act like a variable where we use section('name') to overwrite and extend('location') to locate where we want to overwrite it --}}
     <title>@yield('title')</title>

@@ -24,13 +24,16 @@ route::get('/admin', function() {
 });
 
 route::get('/products', function(){
-    return view('admin.products.index');
+    return view('index');
 });
 
 route::get('/customers',function(){
-    return view('admin.customers.index');
+    return view('index');
 });
 
 // use {location} at the top before calling Controller
 route::resource('/admin/products',ProductController::class);
 
+route::get('/admin/dashboard', function(){
+    return view('admin.dashboard');
+});

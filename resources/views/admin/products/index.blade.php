@@ -1,5 +1,7 @@
 @extends('admin.layouts.master')
 @section('title','Product Management')
-@section('container-body')
-    Product index.blade.php is under construction
+@section('location','Admin / Product')
+@section('user','Oeung Chhengkheang')
+@section('container-right')
+    <h1>Product Management</h1>
 @endsection
